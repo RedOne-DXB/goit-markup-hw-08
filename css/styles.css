@@ -1,0 +1,10 @@
+span {
+  color: #2196f3;
+}
+.site-link ul {
+  color: #212121, 100%;
+}
+.link:hover,
+.link:focus {
+  color: #2196f3, 100%;
+}
