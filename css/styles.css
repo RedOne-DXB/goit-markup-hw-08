@@ -1,13 +1,13 @@
 .logo-header {
   color: #000000;
   text-decoration: none;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 26px;
 }
 
-span {
+.logo-web {
   color: #2196f3;
 }
 .site-nav .link {
@@ -16,6 +16,6 @@ span {
   font-size: 14px;
 }
 .site-nav .link:hover,
-.site-nav .link:focus {
+.link:focus {
   color: #2196f3, 100%;
 }
