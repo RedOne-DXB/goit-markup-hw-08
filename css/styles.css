@@ -1,24 +1,35 @@
 body {
   font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #212121;
+}
+p {
+  color: #757575;
 }
 .logo-header {
   color: #000000;
   text-decoration: none;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-style: normal;
   font-size: 26px;
+  line-height: 1.17;
 }
-
 .logo-web {
   color: #2196f3;
 }
-.site-nav .link {
+.link {
   color: #000000, 100%;
   text-decoration: none;
   font-size: 14px;
 }
-.site-nav .link:hover,
+.link:hover,
 .link:focus {
   color: #2196f3, 100%;
 }
