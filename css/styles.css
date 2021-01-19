@@ -11,8 +11,12 @@ body {
   color: var(--main-color);
   background-color: var(--background-color);
 }
+ul {
+  list-style: none;
+}
 
 /*============HEADER=============*/
+
 .logo.logo-header {
   font-family: "Raleway";
   font-weight: 700;
@@ -20,6 +24,7 @@ body {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  text-decoration: none;
 }
 
 .logo-web {
@@ -32,6 +37,7 @@ body {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  text-decoration: none;
 }
 
 .site-navigation-link:hover,
@@ -48,6 +54,7 @@ body {
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  text-decoration: none;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -141,6 +148,7 @@ body {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--background-color);
+  text-decoration: none;
 }
 .address {
   font-style: normal;
@@ -152,5 +160,35 @@ body {
 }
 .address-link {
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 /*===============END FOOTER===========*/
+
+/*===============PORTFOLIO================*/
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+}
+.button:hover,
+.button:focus {
+  color: var(--background-color);
+  background-color: var(--accent-color);
+}
+.services-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.999;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.services-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+}
