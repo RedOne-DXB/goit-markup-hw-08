@@ -7,6 +7,7 @@
   --accent-color: #2196f3;
   --background-white-color: #f5f4fa;
   --background-black-color: #2f303a;
+  --background-transparent-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -167,7 +168,7 @@ ol {
   color: var(--main-white-color);
 }
 .address-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--background-transparent-color);
   text-decoration: none;
 }
 /*===============END FOOTER===========*/
