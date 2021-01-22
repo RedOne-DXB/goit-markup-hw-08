@@ -1,24 +1,28 @@
 :root {
   --text-font: "Roboto", sans-serif;
+  --title-font: "Raleway", sans-serif;
   --main-color: #757575;
+  --main-white-color: #ffffff;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --background-color: #ffffff;
+  --background-white-color: #f5f4fa;
+  --background-black-color: #2f303a;
 }
 
 body {
   font-family: var(--text-font);
   color: var(--main-color);
-  background-color: var(--background-color);
+  background-color: var(--main-white-color);
 }
-ul {
+ul,
+ol {
   list-style: none;
 }
 
 /*============HEADER=============*/
 
 .logo.logo-header {
-  font-family: "Raleway";
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.714;
@@ -27,7 +31,7 @@ ul {
   text-decoration: none;
 }
 
-.logo-web {
+.logo-header-web {
   color: var(--accent-color);
 }
 
@@ -64,7 +68,7 @@ ul {
 
 /*===============HERO===========*/
 .hero {
-  background-color: #2f303a;
+  background-color: var(--background-black-color);
 }
 .hero-title {
   font-weight: 900;
@@ -73,7 +77,7 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--background-color);
+  color: var(--main-white-color);
 }
 .hero-button {
   font-weight: 700;
@@ -83,7 +87,7 @@ ul {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--background-color);
+  color: var(--main-white-color);
   background-color: var(--accent-color);
 }
 /*==============END HERO==============*/
@@ -118,7 +122,7 @@ ul {
 
 /*===============TEAM=====================*/
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--background-white-color);
 }
 .team-list-name {
   font-weight: 500;
@@ -139,24 +143,28 @@ ul {
 
 /*=================FOOTER==================*/
 .footer {
-  background-color: #2f303a;
+  background-color: var(--background-black-color);
 }
 .logo.logo-footer {
-  font-family: "Raleway";
+  font-family: var(--title-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--background-color);
+  color: var(--main-white-color);
   text-decoration: none;
 }
+.logo-footer-web {
+  color: var(--accent-color);
+}
+
 .address {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--background-color);
+  color: var(--main-white-color);
 }
 .address-link {
   color: rgba(255, 255, 255, 0.6);
@@ -172,11 +180,11 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-  background-color: #f5f4fa;
+  background-color: var(--background-white-color);
 }
 .button:hover,
 .button:focus {
-  color: var(--background-color);
+  color: var(--main-white-color);
   background-color: var(--accent-color);
 }
 .services-title {
@@ -191,4 +199,7 @@ ul {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
+}
+.services-list-item > {
+  list-style: none;
 }
