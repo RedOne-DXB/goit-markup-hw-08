@@ -129,8 +129,10 @@ img {
 /*===============HERO===========*/
 .hero {
   background-color: var(--background-black-color);
- text-align: center;
+  text-align: center;
+  margin-bottom: 94px;
 }
+
 .hero-title {
   margin-bottom: 30px;
   font-weight: 900;
@@ -154,6 +156,15 @@ img {
 /*==============END HERO==============*/
 
 /*==============ADVANTAGES=============*/
+.advantages-list {
+  display: flex;
+  margin-bottom: 94px;
+}
+
+.advantages-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
@@ -172,6 +183,7 @@ img {
 
 /*===========SERVICES GALLERY==========*/
 .title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
@@ -179,12 +191,38 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
+.services-gallery-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+
 /*========END SERVICE GALLERY========*/
 
 /*===============TEAM=====================*/
 .team {
   background-color: var(--background-white-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+
+.team .title {
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-list-image {
+  width: 260px;
+}
+
 .team-list-name {
   font-weight: 500;
   font-size: 16px;
@@ -205,8 +243,11 @@ img {
 /*=================FOOTER==================*/
 .footer {
   background-color: var(--background-black-color);
+  padding-top: 60px;
 }
 .footer-logo {
+  margin-bottom: 20px;
+
   font-family: var(--title-font);
   font-weight: 700;
   font-size: 26px;
@@ -220,6 +261,9 @@ img {
 }
 
 .address {
+  display: flex;
+  flex-direction: column;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -227,6 +271,16 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-white-color);
 }
+
+.address-map {
+  margin-bottom: 9px;
+  margin-top: 0;
+}
+
+.address-wrapper-item:nth-child(2n + 1) {
+  padding-bottom: 9px;
+}
+
 .address-link {
   color: var(--background-transparent-color);
   text-decoration: none;
