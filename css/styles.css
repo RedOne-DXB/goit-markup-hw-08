@@ -246,8 +246,6 @@ img {
   padding-top: 60px;
 }
 .footer-logo {
-  margin-bottom: 20px;
-
   font-family: var(--title-font);
   font-weight: 700;
   font-size: 26px;
@@ -261,6 +259,7 @@ img {
 }
 
 .address {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 
