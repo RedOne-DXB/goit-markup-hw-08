@@ -247,6 +247,7 @@ img {
   background-color: var(--background-black-color);
   padding-top: 60px;
 }
+
 .footer-logo {
   font-family: var(--title-font);
   font-weight: 700;
@@ -292,12 +293,14 @@ img {
 
 .hidden {
   visibility: hidden;
+  padding: 0px;
+  font-size: 0px;
 }
 
 .button-navigation-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
+  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -333,6 +336,20 @@ img {
 .services-list {
   display: flex;
   flex-wrap: wrap;
+}
+
+.services-list-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.services-list-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.services-list-item:nth-child(n + 7) {
+  margin-bottom: 94px;
 }
 
 .services-title {
