@@ -145,6 +145,7 @@ img {
 .hero-button {
   padding: 10px 32px;
   border-radius: 4px;
+  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -182,6 +183,7 @@ img {
 /*============END ADVANTAGES============*/
 
 /*===========SERVICES GALLERY==========*/
+
 .title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -287,7 +289,26 @@ img {
 /*===============END FOOTER===========*/
 
 /*===============PORTFOLIO================*/
+
+.hidden {
+  visibility: hidden;
+}
+
+.button-navigation-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+  margin-bottom: 50px;
+}
+
+.button-navigation-item:not(:last-child) {
+  margin-right: 8px;
+}
+
 .button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
@@ -295,12 +316,25 @@ img {
   letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var(--background-white-color);
+  border-color: transparent;
 }
+
 .button:hover,
 .button:focus {
   color: var(--main-white-color);
   background-color: var(--accent-color);
 }
+
+.button.current {
+  background-color: var(--accent-color);
+  color: var(--main-white-color);
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .services-title {
   font-weight: 700;
   font-size: 18px;
