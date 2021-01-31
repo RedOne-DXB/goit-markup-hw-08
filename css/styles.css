@@ -4,6 +4,7 @@
   --main-color: #757575;
   --main-white-color: #ffffff;
   --title-text-color: #212121;
+  --logo-black-color: #000000;
   --accent-color: #2196f3;
   --background-white-color: #f5f4fa;
   --background-black-color: #2f303a;
@@ -49,18 +50,21 @@ img {
 
 /*============HEADER=============*/
 
-.logo.logo-header {
+.logo {
   font-family: var(--title-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.714;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
   text-decoration: none;
 }
 
-.logo-header-web {
+.logo-header.logo {
   color: var(--accent-color);
+}
+
+.logo-header-studio {
+  color: var(--logo-black-color);
 }
 
 .site-navigation {
@@ -262,17 +266,12 @@ img {
   padding-top: 60px;
 }
 
-.footer-logo {
-  font-family: var(--title-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--main-white-color);
-  text-decoration: none;
-}
-.footer-logo-web {
+.logo-footer.logo {
   color: var(--accent-color);
+}
+
+.logo-footer-studio {
+  color: var(--main-white-color);
 }
 
 .address {
