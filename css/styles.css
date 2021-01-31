@@ -41,7 +41,7 @@ img {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -130,7 +130,8 @@ img {
 .hero {
   background-color: var(--background-black-color);
   text-align: center;
-  margin-bottom: 94px;
+  margin-top: 200px;
+  margin-bottom: 200px;
 }
 
 .hero-title {
@@ -157,9 +158,15 @@ img {
 /*==============END HERO==============*/
 
 /*==============ADVANTAGES=============*/
+
+.advantages {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
 .advantages-list {
   display: flex;
-  margin-bottom: 94px;
+  margin: 0px 0px;
 }
 
 .advantages-list-item:not(:last-child) {
@@ -179,10 +186,18 @@ img {
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
+
 /*============END ADVANTAGES============*/
 
 /*===========SERVICES GALLERY==========*/
+
+.services-gallery {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .title {
   margin-bottom: 50px;
@@ -197,7 +212,6 @@ img {
 .services-gallery-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 94px;
 }
 
 /*========END SERVICE GALLERY========*/
