@@ -57,9 +57,6 @@ img {
   line-height: 1.714;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
-
-.logo-header.logo {
   color: var(--accent-color);
 }
 
@@ -134,8 +131,8 @@ img {
 .hero {
   background-color: var(--background-black-color);
   text-align: center;
-  margin-top: 200px;
-  margin-bottom: 200px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -164,13 +161,16 @@ img {
 /*==============ADVANTAGES=============*/
 
 .advantages {
-  padding-bottom: 94px;
   padding-top: 94px;
 }
 
 .advantages-list {
   display: flex;
   margin: 0px 0px;
+}
+
+.advantages-list-item {
+  width: 270px;
 }
 
 .advantages-list-item:not(:last-child) {
@@ -235,12 +235,23 @@ img {
   display: flex;
 }
 
+.team-list-item {
+  width: 270px;
+}
+
 .team-list-item:not(:last-child) {
   margin-right: 30px;
 }
 
 .team-list-image {
-  width: 260px;
+  width: 270px;
+}
+
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 
 .team-list-name {
@@ -252,6 +263,7 @@ img {
   color: var(--title-text-color);
 }
 .description {
+  margin: 10px 0 0 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.187;
@@ -264,10 +276,7 @@ img {
 .footer {
   background-color: var(--background-black-color);
   padding-top: 60px;
-}
-
-.logo-footer.logo {
-  color: var(--accent-color);
+  padding-bottom: 60px;
 }
 
 .logo-footer-studio {
