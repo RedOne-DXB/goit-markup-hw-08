@@ -358,6 +358,11 @@ img {
   background-color: var(--accent-color);
   color: var(--main-white-color);
 }
+.button.current:hover,
+.button.current:focus {
+  background-color: var(--accent-color);
+  color: var(--main-white-color);
+}
 
 .services-list {
   display: flex;
@@ -374,6 +379,10 @@ img {
   margin-right: 0px;
 }
 
+.services-card {
+  padding: 20px 24px;
+}
+
 .services-title {
   font-weight: 700;
   font-size: 18px;
@@ -382,6 +391,7 @@ img {
   color: var(--title-text-color);
 }
 .services-description {
+  margin: 4px 0 0 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
