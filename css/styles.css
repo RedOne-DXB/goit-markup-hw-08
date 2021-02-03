@@ -112,17 +112,24 @@ img {
 .contact-link {
   padding-top: 32px;
   padding-bottom: 32px;
+  display: block;
 
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
   color: var(--main-color);
+  fill: currentColor;
   text-decoration: none;
 }
+
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
+}
+
+.link-icon {
+  margin: 0 10px 0 0;
 }
 
 /*==============END HEADER==========*/
