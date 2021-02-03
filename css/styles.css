@@ -302,7 +302,7 @@ img {
 }
 
 .address-wrapper-item:nth-child(2n + 1) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .address-link {
@@ -319,10 +319,14 @@ img {
   font-size: 0px;
 }
 
+.button-navigation {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .button-navigation-list {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 
@@ -368,10 +372,6 @@ img {
 
 .services-list-item:nth-child(3n) {
   margin-right: 0px;
-}
-
-.services-list-item:nth-child(n + 7) {
-  margin-bottom: 94px;
 }
 
 .services-title {
