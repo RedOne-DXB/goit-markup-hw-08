@@ -213,6 +213,16 @@ img {
   margin-bottom: 0;
 }
 
+.advantages-list-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--background-white-color);
+}
+
 /*============END ADVANTAGES============*/
 
 /*===========SERVICES GALLERY==========*/
