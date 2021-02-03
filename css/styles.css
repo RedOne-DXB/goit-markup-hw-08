@@ -281,6 +281,7 @@ img {
   padding-bottom: 30px;
   padding-right: 32px;
   padding-left: 32px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .team-list-name {
@@ -299,6 +300,43 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+.social-media-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.social-media-item {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.social-media-item:last-child {
+  margin-right: 0;
+}
+
+.social-media-link {
+  display: block;
+  text-decoration: none;
+  padding: 12px;
+  width: 100%;
+  height: 100%;
+
+  color: var(--main-color);
+  fill: currentColor;
+  cursor: pointer;
+}
+
+.social-media-link:hover,
+.social-media-link:focus {
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
 /*================END TEAM=================*/
 
 /*=================FOOTER==================*/
@@ -429,35 +467,4 @@ img {
 }
 .services-list-link {
   text-decoration: none;
-}
-
-.social-media-navigation {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-}
-
-.social-media-item {
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
-}
-
-.social-media-item:last-child {
-  margin-right: 0;
-}
-
-.social-media-link {
-  display: block;
-  text-decoration: none;
-  padding: 12px;
-  color: var(--main-color);
-  fill: currentColor;
-  cursor: pointer;
-}
-
-.social-media-link:hover,
-.social-media-link:focus {
-  color: var(--accent-color);
 }
