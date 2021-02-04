@@ -9,8 +9,7 @@
   --background-white-color: #f5f4fa;
   --background-black-color: #2f303a;
   --background-transparent-color: rgba(255, 255, 255, 0.6);
-  --logo-clients-color:  #AFB1B8;
-
+  --logo-clients-color: #afb1b8;
 }
 
 body {
@@ -479,34 +478,32 @@ img {
 .our-clients-list {
   display: flex;
   justify-content: center;
-  padding: 0;
-  margin: 0;
 }
 
 .our-clients-item {
-  padding: 20px 65px;
   margin-right: 30px;
-
   width: 170px;
   height: 90px;
-  border: 1px solid;
-}
-
-.our-clients-item:nth-child(4) {
-  padding: 24px 45px;
-}
-
-.our-clients-item:nth-child(5) {
-  padding: 22px 55px 21px 56px;
 }
 
 .our-clients-item:last-child {
   margin-right: 0;
-  padding: 22px 40px 23px 41px;
 }
 
 .our-clients-link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   height: 100%;
   width: 100%;
+  border: 1px solid;
+  border-radius: 4px;
+  color: var(--logo-clients-color);
+  fill: currentColor;
+}
+
+.our-clients-link:hover,
+.our-clients-link:focus {
+  color: var(--accent-color);
 }
