@@ -498,16 +498,6 @@ img {
   background-color: var(--accent-color);
 }
 
-.button.current {
-  background-color: var(--accent-color);
-  color: var(--main-white-color);
-}
-.button.current:hover,
-.button.current:focus {
-  background-color: var(--accent-color);
-  color: var(--main-white-color);
-}
-
 .services-list {
   display: flex;
   flex-wrap: wrap;
