@@ -102,7 +102,22 @@ img {
   color: var(--accent-color);
 }
 .site-navigation-link.current {
+  position: relative;
   color: var(--accent-color);
+}
+
+.site-navigation-link.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 76px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  color: var(--accent-color);
+  background-color: var(--accent-color);
+  border: 1px solid;
+  border-radius: 2px;
 }
 
 .contact-information-list {
