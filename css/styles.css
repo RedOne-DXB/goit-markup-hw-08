@@ -10,6 +10,7 @@
   --background-black-color: #2f303a;
   --background-transparent-color: rgba(255, 255, 255, 0.6);
   --logo-clients-color: #afb1b8;
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -95,6 +96,10 @@ img {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
 }
 
 .site-navigation-link:hover,
@@ -142,6 +147,10 @@ img {
   color: var(--main-color);
   fill: currentColor;
   text-decoration: none;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
 }
 
 .contact-link:hover,
@@ -373,17 +382,21 @@ img {
   padding: 12px;
   width: 100%;
   height: 100%;
+  border-radius: 50%;
 
   color: var(--logo-clients-color);
   fill: currentColor;
   cursor: pointer;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
 }
 
 .social-media-link:hover,
 .social-media-link:focus {
   color: var(--main-white-color);
   background-color: var(--accent-color);
-  border-radius: 50%;
 }
 
 /*================END TEAM=================*/
@@ -420,6 +433,10 @@ img {
   border-radius: 4px;
   color: var(--logo-clients-color);
   fill: currentColor;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
 }
 
 .our-clients-link:hover,
@@ -529,6 +546,10 @@ img {
   color: var(--title-text-color);
   background-color: var(--background-white-color);
   border-color: transparent;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
 }
 
 .button:hover,
@@ -546,6 +567,7 @@ img {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .services-list-item:nth-child(3n) {
@@ -559,10 +581,42 @@ img {
 .services-list-link {
   text-decoration: none;
   display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 .services-list-link:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.image-layer {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-layer-description {
+  position: absolute;
+  margin: 0;
+
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.555;
+  color: var(--main-white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
+}
+
+.services-list-link:hover .image-layer-description {
+  opacity: 1;
+  transform: translateY(0%);
 }
 
 .services-card {
