@@ -195,6 +195,8 @@ img {
 .hero-button {
   padding: 10px 32px;
   border-radius: 4px;
+  border: none;
+  outline: none;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
