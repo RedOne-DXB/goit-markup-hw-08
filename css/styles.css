@@ -136,9 +136,10 @@ img {
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: block;
 
   font-weight: 500;
   font-size: 14px;
