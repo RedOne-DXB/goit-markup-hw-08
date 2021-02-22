@@ -623,6 +623,10 @@ img {
 .button:focus {
   color: var(--main-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
 }
 
 .services-list {
