@@ -65,22 +65,22 @@
       <!--BUTTONS-->
       <section class="button-navigation">
         <div class="container">
-          <h1 class="hidden">Заголовок</h1>
+          <h1 class="visually-hidden">Заголовок</h1>
           <ul class="button-navigation-list">
             <li class="button-navigation-item">
-              <button class="button current" type="button">Все</button>
+              <button class="filter-button current" type="button">Все</button>
             </li>
             <li class="button-navigation-item">
-              <button class="button" type="button">Веб-сайты</button>
+              <button class="filter-button" type="button">Веб-сайты</button>
             </li>
             <li class="button-navigation-item">
-              <button class="button" type="button">Приложения</button>
+              <button class="filter-button" type="button">Приложения</button>
             </li>
             <li class="button-navigation-item">
-              <button class="button" type="button">Дизайн</button>
+              <button class="filter-button" type="button">Дизайн</button>
             </li>
             <li class="button-navigation-item">
-              <button class="button" type="button">Маркетинг</button>
+              <button class="filter-button" type="button">Маркетинг</button>
             </li>
           </ul>
 
@@ -321,7 +321,7 @@
         </div>
 
         <div>
-          <b class="join">Присоединяйтесь</b>
+          <b class="bring-attention">Присоединяйтесь</b>
           <ul class="social-media-navigation">
             <li class="social-media-item">
               <a class="social-media-link bottom-link" href="">
@@ -352,6 +352,26 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <div class="form-wrapper">
+          <b class="bring-attention">Подпишитесь на рассылку</b>
+          <form class="form">
+            <label for="mail" class="visually-hidden">Email</label>
+            <input
+              type="email"
+              class="form-input"
+              id="mail"
+              name="user-email"
+              placeholder="E-mail"
+            />
+            <button type="submit" class="button form-button">
+              Подписаться
+              <svg width="24px" height="24px">
+                <use href="./images/icons.svg#signup"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
