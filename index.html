@@ -529,7 +529,7 @@
             <label for="mail" class="visually-hidden">Email</label>
             <input
               type="email"
-              class="form-input"
+              class="footer-input"
               id="mail"
               name="user-email"
               placeholder="E-mail"
@@ -544,7 +544,7 @@
         </div>
       </div>
     </footer>
-
+    class="form-input"
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close-button" data-modal-close>
@@ -552,6 +552,65 @@
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
+
+        <div class="thumb">
+          <form class="modal-form">
+            <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+            <div class="form-group" role="group">
+              <label for="name" class="form-label">Имя</label>
+              <input
+                type="text"
+                class="form-input"
+                id="name"
+                name="user-name"
+              />
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#person"></use>
+              </svg>
+            </div>
+            <div class="form-group">
+              <label for="telephone" class="form-label">Телефон</label>
+              <input
+                type="tel"
+                class="form-input"
+                id="telephone"
+                name="user-telephone"
+              />
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#telephone"></use>
+              </svg>
+            </div>
+            <div class="form-group" role="group">
+              <label for="email" class="form-label">Почта</label>
+              <input
+                type="email"
+                class="form-input"
+                id="email"
+                name="user-email"
+              />
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/icons.svg#email"></use>
+              </svg>
+            </div>
+            <div class="form-group" role="group">
+              <label for="comments" class="form-label">Комментарий</label>
+              <textarea
+                id="comments"
+                class="form-input textarea"
+                name="user-comments"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+            <div class="form-group" role="group">
+              <input type="checkbox" id="terms" name="terms" />
+              <label for="terms" class="form-label"
+                >Соглашаюсь с рассылкой и принимаю
+                <a href="" class="agreement">Условия договора</a></label
+              >
+            </div>
+            <button type="submit" class="button">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
 
