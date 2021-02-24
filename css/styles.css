@@ -795,3 +795,9 @@ textarea {
   left: 5px;
   transform: translate(50%, -10%);
 }
+
+.checkbox:checked + .checkbox-icon {
+  background-image: url("../images/icons.svg#checkmark");
+  background-color: var(--accent-color);
+  background-size: contain;
+}
