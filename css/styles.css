@@ -259,11 +259,6 @@ textarea {
   fill: var(--main-white-color);
 }
 
-.close-icon:hover {
-  fill: var(--accent-color);
-  background-color: var(--main-white-color);
-}
-
 .modal-close-button {
   position: absolute;
   right: 8px;
@@ -892,4 +887,8 @@ textarea {
   border: none;
 
   transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic);
+}
+
+.modal-close-button:hover .close-icon {
+  fill: var(--accent-color);
 }
