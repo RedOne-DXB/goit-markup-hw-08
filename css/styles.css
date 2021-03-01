@@ -779,6 +779,7 @@ textarea {
 
 .form-input {
   display: block;
+  padding-left: 42px;
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
