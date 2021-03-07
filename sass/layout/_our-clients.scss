@@ -12,10 +12,10 @@
   margin-right: 30px;
   width: 170px;
   height: 90px;
-}
 
-.our-clients-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .our-clients-link {
@@ -33,9 +33,9 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
-}
 
-.our-clients-link:hover,
-.our-clients-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

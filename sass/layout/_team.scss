@@ -14,10 +14,10 @@
 
 .team-list-item {
   width: 270px;
-}
 
-.team-list-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team-list-image {
@@ -46,6 +46,7 @@
   letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
+
 .description {
   margin: 10px 0 16px 0;
   font-weight: 400;

@@ -4,10 +4,6 @@
   padding-bottom: 60px;
 }
 
-.logo-footer-studio {
-  color: var(--main-white-color);
-}
-
 .address {
   margin-top: 20px;
   display: flex;
@@ -26,8 +22,10 @@
   margin-top: 0;
 }
 
-.address-wrapper-item:nth-child(2n + 1) {
-  margin-bottom: 9px;
+.address-wrapper-item {
+  &:nth-child(2n + 1) {
+    margin-bottom: 9px;
+  }
 }
 
 .address-link {
