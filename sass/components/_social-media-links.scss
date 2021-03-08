@@ -8,10 +8,10 @@
   width: 44px;
   height: 44px;
   margin-right: 10px;
-}
 
-.social-media-item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social-media-link {
@@ -29,10 +29,10 @@
   transition-property: color, background-color;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
-}
 
-.social-media-link:hover,
-.social-media-link:focus {
-  color: var(--main-white-color);
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+  }
 }

@@ -6,11 +6,12 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--accent-color);
+}
 
-  &-header-studio {
-    color: var(--logo-black-color);
-  }
-  &-footer-studio {
-    color: var(--main-white-color);
-  }
+.logo-header-studio {
+  color: var(--logo-black-color);
+}
+
+.logo-footer-studio {
+  color: var(--main-white-color);
 }
