@@ -45,6 +45,8 @@ ol {
 
 img {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 textarea {
@@ -52,10 +54,27 @@ textarea {
 }
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 100%;
+  padding: 0 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header .container {
@@ -82,10 +101,12 @@ textarea {
 }
 
 .button {
+  display: block;
+  margin: 0 auto;
+  min-width: 200px;
   padding: 10px 32px;
+  border: 1px solid transparent;
   border-radius: 4px;
-  border: none;
-  outline: none;
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -94,6 +115,7 @@ textarea {
   letter-spacing: 0.06em;
   color: var(--main-white-color);
   background-color: var(--accent-color);
+  transition: transform 250ms var(--cubic);
 }
 
 .submit-button {
@@ -388,45 +410,114 @@ textarea {
 }
 
 .hero {
-  max-width: 1600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-image.jpg);
+  max-width: 480px;
+  height: 400px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/hero/hero-mobile.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/mobile/hero/hero-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero/hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/tablet/hero/hero-tablet@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/hero/hero-desktop.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/desktop/hero/hero-desktop@2x.jpg);
+  }
 }
 
 .hero-title {
   margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 320px;
+  text-align: center;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.364;
+  font-size: 26px;
+  line-height: 1.615;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-white-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.363;
+  }
+}
+
 .advantages {
-  padding-top: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.advantages-list {
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.advantages-list-icons {
   display: flex;
-  margin: 0px 0px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  padding: 0;
+  border: none;
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  color: var(--background-white-color);
 }
 
-.advantages-list-item {
-  width: 270px;
-}
-
-.advantages-list-item:not(:last-child) {
-  margin-right: 30px;
+.advantages-icon {
+  display: flex;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advantages-title {
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
@@ -442,16 +533,6 @@ textarea {
   letter-spacing: 0.03em;
   margin-top: 10px;
   margin-bottom: 0;
-}
-
-.advantages-list-icons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--background-white-color);
 }
 
 .services-gallery {
