@@ -738,25 +738,41 @@ textarea {
 }
 
 .our-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.our-clients-list {
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 1200px) {
+  .our-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
-.our-clients-item {
+@media screen and (min-width: 320px) {
+  .our-clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .our-clients-item {
+    flex-basis: calc 85%;
+  }
+}
+
+/*.our-clients-item {
   margin-right: 30px;
   width: 170px;
   height: 90px;
-}
 
-.our-clients-item:last-child {
-  margin-right: 0;
-}
-
+  &:last-child {
+    margin-right: 0;
+  }
+}*/
 .our-clients-link {
   display: flex;
   justify-content: center;
