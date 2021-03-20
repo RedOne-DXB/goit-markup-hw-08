@@ -137,34 +137,80 @@
           <ul class="services-gallery-list">
             <li class="services-gallery-item">
               <picture>
+                <source
+                  srcset="
+                    ./images/desktop/advantages/advantage-1.webp    1x,
+                    ./images/desktop/advantages/advantage-1@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/advantages/advantage-1.jpg    1x,
+                    ./images/desktop/advantages/advantage-1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
                 <img
-                class="services-gallery-image"
-                lang="en"
-                src="../"
-                alt="Web Development"
-                width="370"
-              />
+                  class="services-gallery-image"
+                  lang="en"
+                  src="./images/desktop/advantages/advantage-1.jpg"
+                  alt="Web Development"
+                />
               </picture>
-              <p class="image-description">Десктопные приложения</picture>
+              <p class="image-description">Десктопные приложения</p>
             </li>
             <li class="services-gallery-item">
-              <img
-                class="services-gallery-image"
-                lang="en"
-                src="./images/ux.jpg"
-                alt="UX"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/advantages/advantage-2.webp    1x,
+                    ./images/desktop/advantages/advantage-2@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/advantages/advantage-2.jpg    1x,
+                    ./images/desktop/advantages/advantage-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="services-gallery-image"
+                  lang="en"
+                  src="./images/desktop/advantages/advantage-2.jpg"
+                  alt="UX"
+                />
+              </picture>
               <p class="image-description">Мобильные приложения</p>
             </li>
             <li class="services-gallery-item">
-              <img
-                class="services-gallery-image"
-                lang="en"
-                src="./images/ui.jpg"
-                alt="UI"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop/advantages/advantage-3.webp    1x,
+                    ./images/desktop/advantages/advantage-3@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/desktop/advantages/advantage-3.jpg    1x,
+                    ./images/desktop/advantages/advantage-3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="services-gallery-image"
+                  lang="en"
+                  src="./images/desktop/advantages/advantage-3.jpg"
+                  alt="UI"
+                />
+              </picture>
               <p class="image-description">Дизайнерские решения</p>
             </li>
           </ul>
@@ -173,18 +219,64 @@
 
       <!--TEAM-->
 
-      <!--<section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list-item">
               <div class="team-card-wrapper">
-                <img
-                  class="team-list-image"
-                  src="./images/igor.jpg"
-                  alt="Игорь Демьяненко"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/team/igor-desktop.webp    1x,
+                      ./images/desktop/team/igor-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/team/igor-desktop.jpg    1x,
+                      ./images/desktop/team/igor-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/team/igor-tablet.webp    1x,
+                      ./images/tablet/team/igor-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/team/igor-tablet.jpg    1x,
+                      ./images/tablet/team/igor-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/team/igor-mobile.webp    1x,
+                      ./images/mobile/team/igor-mobile@2x.webp 2x
+                    "
+                    media="(min-width: 320px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/team/igor-mobile.jpg    1x,
+                      ./images/mobile/team/igor-mobile@2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="team-list-image"
+                    src="./images/mobile/team/igor-mobile.jpg"
+                    alt="Игорь Демьяненко"
+                  />
+                </picture>
                 <div class="team-card">
                   <h3 class="team-list-name">Игорь Демьяненко</h3>
                   <p class="description" lang="en">Product Designer</p>
@@ -239,12 +331,58 @@
             </li>
             <li class="team-list-item">
               <div class="team-card-wrapper">
-                <img
-                  class="team-list-image"
-                  src="./images/olga.jpg"
-                  alt="Ольга Репина"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/team/olga-desktop.webp    1x,
+                      ./images/desktop/team/olga-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/team/olga-desktop.jpg    1x,
+                      ./images/desktop/team/olga-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/team/olga-tablet.webp    1x,
+                      ./images/tablet/team/olga-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/team/olga-tablet.jpg    1x,
+                      ./images/tablet/team/olga-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/team/olga-mobile.webp    1x,
+                      ./images/mobile/team/olga-mobile@2x.webp 2x
+                    "
+                    media="(min-width: 320px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/team/olga-mobile.jpg    1x,
+                      ./images/mobile/team/olga-mobile@2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="team-list-image"
+                    src="./images/mobile/team/olga-mobile.jpg"
+                    alt="Ольга Репина"
+                  />
+                </picture>
                 <div class="team-card">
                   <h3 class="team-list-name">Ольга Репина</h3>
                   <p class="description" lang="en">Frontend Developer</p>
@@ -299,12 +437,58 @@
             </li>
             <li class="team-list-item">
               <div class="team-card-wrapper">
-                <img
-                  class="team-list-image"
-                  src="./images/nikolay.jpg"
-                  alt="Николай Тарасов"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/team/nikolay-desktop.webp    1x,
+                      ./images/desktop/team/nikolay-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/team/nikolay-desktop.jpg    1x,
+                      ./images/desktop/team/nikolay-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/team/nikolay-tablet.webp    1x,
+                      ./images/tablet/team/nikolay-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/team/nikolay-tablet.jpg    1x,
+                      ./images/tablet/team/nikolay-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/team/nikolay-mobile.webp    1x,
+                      ./images/mobile/team/nikolay-mobile@2x.webp 2x
+                    "
+                    media="(min-width: 320px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/team/nikolay-mobile.jpg    1x,
+                      ./images/mobile/team/nikolay-mobile@2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="team-list-image"
+                    src="./images/mobile/team/nikolay-mobile.jpg"
+                    alt="Николай Тарасов"
+                  />
+                </picture>
                 <div class="team-card">
                   <h3 class="team-list-name">Николай Тарасов</h3>
                   <p class="description" lang="en">Marketing</p>
@@ -359,12 +543,58 @@
             </li>
             <li class="team-list-item">
               <div class="team-card-wrapper">
-                <img
-                  class="team-list-image"
-                  src="./images/michael.jpg"
-                  alt="Михаил Ермаков"
-                  width="270"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/desktop/team/michael-desktop.webp    1x,
+                      ./images/desktop/team/michael-desktop@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/desktop/team/michael-desktop.jpg    1x,
+                      ./images/desktop/team/michael-desktop@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/team/michael-tablet.webp    1x,
+                      ./images/tablet/team/michael-tablet@2x.webp 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet/team/michael-tablet.jpg    1x,
+                      ./images/tablet/team/michael-tablet@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/team/michael-mobile.webp    1x,
+                      ./images/mobile/team/michael-mobile@2x.webp 2x
+                    "
+                    media="(min-width: 320px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile/team/michael-mobile.jpg    1x,
+                      ./images/mobile/team/michael-mobile@2x.jpg 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    class="team-list-image"
+                    src="./images/mobile/team/michael-mobile.jpg"
+                    alt="Михаил Ермаков"
+                  />
+                </picture>
                 <div class="team-card">
                   <h3 class="team-list-name">Михаил Ермаков</h3>
                   <p class="description" lang="en">UI Designer</p>
@@ -419,7 +649,7 @@
             </li>
           </ul>
         </div>
-      </section>-->
+      </section>
 
       <!--<section class="our-clients">
         <div class="container">
