@@ -50,6 +50,13 @@
   justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .bottom-container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
 body {
   font-family: var(--text-font);
   color: var(--main-color);
@@ -389,6 +396,27 @@ textarea {
   border: none;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-wrapper {
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    max-width: 610px;
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-wrapper {
+    margin-right: 93px;
+  }
+}
+
 .address-container {
   display: flex;
   flex-direction: column;
@@ -398,6 +426,12 @@ textarea {
   .address-container {
     align-items: center;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .address-container {
+    margin-right: 70px;
   }
 }
 
@@ -447,6 +481,16 @@ textarea {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .bring-attention {
+    margin-bottom: 0;
+  }
+}
+
+.footer-links {
+  margin-top: 20px;
+}
+
 @media screen and (max-width: 1199px) {
   .form-button-wrapper {
     display: flex;
@@ -455,46 +499,11 @@ textarea {
   }
 }
 
-/*.address-map {
-  margin-bottom: 9px;
-  margin-top: 0;
-}
-
-.address-wrapper-item {
-  &:nth-child(2n + 1) {
-    margin-bottom: 9px;
-  }
-}
-
-.address-link {
-  color: var(--background-transparent-color);
-  text-decoration: none;
-}
-
-.footer-wrapper {
-  margin-right: 70px;
-}
-
-.bring-attention {
-  display: inline-block;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-white-color);
-}
-
-.bottom-container {
-  display: flex;
-  align-items: baseline;
-}*/
 @media scren and (max-width: 1199px) {
   .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -514,7 +523,31 @@ textarea {
 
 @media screen and (max-width: 1199px) {
   .footer-input {
-    margin: 0 auto 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    margin-top: 20px;
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .input-wrapper {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .input-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

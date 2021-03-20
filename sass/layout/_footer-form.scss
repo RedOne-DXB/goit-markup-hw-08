@@ -2,7 +2,7 @@
   .form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -22,6 +22,31 @@
 
 @media screen and (max-width: 1199px) {
   .footer-input {
-    margin: 0 auto 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-input {
+    margin-top: 20px;
+    margin-right: 12px;
+
+    width: 358px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .input-wrapper {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .input-button-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
   }
 }
