@@ -295,85 +295,93 @@
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container bottom-container">
-        <div class="footer-wrapper">
-          <a class="logo-footer logo" lang="en" href="/"
-            >Web<span class="logo-footer-studio">Studio</span>
-          </a>
+    <footer>
+      <section class="footer">
+        <div class="container bottom-container">
+          <div class="footer-wrapper">
+            <div class="address-container">
+              <a class="logo-footer logo" lang="en" href="/"
+                >Web<span class="logo-footer-studio">Studio</span>
+              </a>
 
-          <address class="address">
-            <p class="address-map">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="address-wrapper">
-              <li class="address-wrapper-item">
-                <a class="address-link" lang="en" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
-              </li>
+              <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+              <ul class="address-list">
+                <li class="address-list-item">
+                  <a
+                    class="address-link"
+                    lang="en"
+                    href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
 
-              <li class="address-wrapper-item">
-                <a class="address-link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
+                <li class="address-listr-item">
+                  <a class="address-link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="social-media-container">
+              <b class="bring-attention">Присоединяйтесь</b>
+              <ul class="social-media-navigation footer-links">
+                <li class="social-media-item">
+                  <a class="social-media-link bottom-link" href="">
+                    <svg class="social-media-icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a class="social-media-link bottom-link" href="">
+                    <svg class="social-media-icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a class="social-media-link bottom-link" href="">
+                    <svg class="social-media-icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social-media-item">
+                  <a class="social-media-link bottom-link" href="">
+                    <svg class="social-media-icon" width="20px" height="20px">
+                      <use href="./images/sprite.svg#linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="form-wrapper">
+            <b class="bring-attention sign-up">Подпишитесь на рассылку</b>
+            <form class="form">
+              <div class="input-button-wrapper">
+                <div class="input-wrapper">
+                  <input
+                    type="email"
+                    class="footer-input"
+                    id="mail"
+                    name="user-email"
+                    placeholder="E-mail"
+                  />
+                </div>
+                <button type="submit" class="button submit-button">
+                  Подписаться
+                  <svg width="24px" height="24px">
+                    <use href="./images/icons.svg#signup"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
-
-        <div>
-          <b class="bring-attention">Присоединяйтесь</b>
-          <ul class="social-media-navigation">
-            <li class="social-media-item">
-              <a class="social-media-link bottom-link" href="">
-                <svg class="social-media-icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item">
-              <a class="social-media-link bottom-link" href="">
-                <svg class="social-media-icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item">
-              <a class="social-media-link bottom-link" href="">
-                <svg class="social-media-icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media-item">
-              <a class="social-media-link bottom-link" href="">
-                <svg class="social-media-icon" width="20px" height="20px">
-                  <use href="./images/sprite.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="form-wrapper">
-          <b class="bring-attention">Подпишитесь на рассылку</b>
-          <form class="form">
-            <label for="mail" class="visually-hidden">Email</label>
-            <input
-              type="email"
-              class="footer-input"
-              id="mail"
-              name="user-email"
-              placeholder="E-mail"
-            />
-            <button type="submit" class="button submit-button">
-              Подписаться
-              <svg width="24px" height="24px">
-                <use href="./images/icons.svg#signup"></use>
-              </svg>
-            </button>
-          </form>
-        </div>
-      </div>
+      </section>
     </footer>
   </body>
 </html>
