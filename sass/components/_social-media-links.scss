@@ -36,3 +36,10 @@
     background-color: var(--accent-color);
   }
 }
+
+.bottom-link {
+  color: var(--main-white-color);
+  fill: currentColor;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
