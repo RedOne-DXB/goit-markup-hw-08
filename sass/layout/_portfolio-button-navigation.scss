@@ -1,17 +1,50 @@
 .button-navigation {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.button-navigation-list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+@media screen and (min-width: 1200px) {
+  .button-navigation {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button-navigation-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .button-navigation-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .button-navigation-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .button-navigation-item {
   &:not(:last-child) {
     margin-right: 8px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button-navigation-item {
+    &:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
   }
 }
 
