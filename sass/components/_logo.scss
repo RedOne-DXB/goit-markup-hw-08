@@ -9,6 +9,18 @@
   color: var(--accent-color);
 }
 
+.logo-header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .logo-header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
 .logo-header-studio {
   color: var(--logo-black-color);
 }
