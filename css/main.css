@@ -172,6 +172,12 @@ textarea {
   overflow-y: scroll;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu-container {
+    display: none;
+  }
+}
+
 .mobile-menu-container.is-open {
   transform: translateX(-50%) translateY(0%);
 }
