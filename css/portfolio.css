@@ -161,7 +161,7 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-top: 48px;
-  margin-bottom: 302px;
+  margin-bottom: 100px;
 }
 
 .menu-navigation-item:not(:last-child) {
@@ -245,7 +245,7 @@ textarea {
   font-family: var(--title-font);
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.714;
+  line-height: 1.174;
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--accent-color);
@@ -258,8 +258,8 @@ textarea {
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .logo-header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
 
@@ -427,7 +427,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-information-item:not(:last-child) {
     margin-bottom: 10px;
   }

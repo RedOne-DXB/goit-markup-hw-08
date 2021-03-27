@@ -91,7 +91,7 @@
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-information-item {
     &:not(:last-child) {
       margin-bottom: 10px;
