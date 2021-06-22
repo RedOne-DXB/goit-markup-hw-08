@@ -1,4 +1,5 @@
 // const filterBtnContainer = document.querySelector('.filter-button-container');
+// let selectedBtn = null;
 
 // filterBtnContainer.addEventListener('click', onfilterBtnContainerClick);
 
@@ -15,4 +16,5 @@
 
 //     const nextActiveBtn = evt.target;
 //     nextActiveBtn.classList.add('.current');
+//     selectedBtn = nextActiveBtn.dataset.value; //Add dataset value
 // }
